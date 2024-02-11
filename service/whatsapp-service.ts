@@ -6,17 +6,17 @@ import { MongoStore } from "wwebjs-mongo";
 let whatsappClient: Client;
 
 const initWhatsapp = async () => {
-  // await mongoose.connect(
-  //   "mongodb+srv://admin:admin@mycluster.crq6eyr.mongodb.net/?retrywrites=true&w=majority"
-  // );
-  // const store = new MongoStore({ mongoose: mongoose });
+  //   const mongo = await mongoose.connect(
+  //     "mongodb+srv://admin:OvRRsTtGPC9Hj6EZ@mycluster.crq6eyr.mongodb.net/?retryWrites=true&w=majority"
+  //   );
+  //   const store = new MongoStore({ mongoose: mongo });
 
-  // whatsappClient = new Client({
-  //   authStrategy: new RemoteAuth({
-  //     store: store,
-  //     backupSyncIntervalMs: 60000,
-  //   }),
-  // });
+  //   whatsappClient = new Client({
+  //     authStrategy: new RemoteAuth({
+  //       store: store,
+  //       backupSyncIntervalMs: 60000,
+  //     }),
+  //   });
 
   whatsappClient = new Client({
     authStrategy: new LocalAuth(),
